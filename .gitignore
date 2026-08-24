@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/*.txt
+data/*.txt.gz
+data/edges.csv
+results/raw_results.csv
+results/summary.csv
+results/*.json

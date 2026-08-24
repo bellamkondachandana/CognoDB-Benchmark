@@ -1,0 +1,25 @@
+dataset:
+  name: "SNAP Wiki-Vote"
+  source: "https://snap.stanford.edu/data/wiki-Vote.html"
+  download_url: "https://snap.stanford.edu/data/wiki-Vote.txt.gz"
+  edges_file: "data/edges.csv"
+  source_column: "source"
+  target_column: "target"
+  expected_relationships: 103689
+
+benchmark:
+  warmup_iterations: 20
+  read_iterations: 100
+  concurrency: [1, 10, 40]
+  mixed_seconds: 20
+  batch_size: 1000
+  random_seed: 42
+
+# Fill these with the actual advertised instance specs you used.
+# Never claim parity unless the resources are genuinely comparable.
+resources:
+  cognodb: "FILL_FROM_INSTANCE_PAGE"
+  neo4j: "FILL_FROM_INSTANCE_PAGE"
+  memgraph: "FILL_FROM_INSTANCE_PAGE"
+  falkordb: "FILL_FROM_INSTANCE_PAGE"
+  arangodb: "FILL_FROM_INSTANCE_PAGE"
