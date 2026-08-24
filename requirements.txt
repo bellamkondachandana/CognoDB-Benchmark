@@ -1,0 +1,8 @@
+python-dotenv>=1.0,<2
+pandas>=2.2,<3
+numpy>=2.0,<3
+pyyaml>=6.0,<7
+neo4j>=5.20,<7
+requests>=2.31,<3
+redis>=5,<8
+python-arango>=8.1,<9
